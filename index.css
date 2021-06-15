@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+@font-face {
+  font-family: Perfograma;
+  src: url("/fonts/perfograma.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Komoda;
+  src: url("/fonts/komoda.otf") format("opentype");
+  font-weight: normal;
+}
+
+:root {
+  --umber: #8f6246;
+  --beaver: #ad8770;
+  --black: #1a1919;
+  --white: #fcfcfc;
+  --padding: 8rem;
+  --letter-spacing: -0.025em;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  padding: 4rem var(--padding);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand {
+  font-family: Komoda, sans-serif;
+  font-size: 5rem;
+  text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000,
+    0.5px 0.5px 0 #000;
+  transition: color 200ms ease;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 35%;
+}
+
+.nav-links a {
+  font-family: Poppins, sans-serif;
+  font-size: 2.3rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--black);
+  transition: color 200ms ease;
+}
+
+.nav-links a:hover {
+  color: var(--umber);
+}
+
+.navbar-brand:hover {
+  color: var(--umber);
+  text-shadow: -0.5px -0.5px 0 var(--umber), 0.5px -0.5px 0 var(--umber),
+    -0.5px 0.5px 0 var(--umber), 0.5px 0.5px 0 var(--umber);
+}
+
+.hero {
+  position: relative;
+  background-image: url("/public/india-map.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+}
+
+.down-arrow {
+  position: absolute;
+  bottom: 5rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  right: 5rem;
+  transform: translateY(-50%);
+  padding: 1rem 2rem;
+  width: 35%;
+  border-radius: 10px;
+  background-color: rgba(252, 252, 252, 0.5);
+}
+
+.perfo-title {
+  font-family: Perfograma;
+  font-size: 5rem;
+  color: var(--umber);
+  margin: 0;
+}
+
+.desc {
+  font-size: 2rem;
+}
+
+.featured {
+  width: 100vw;
+  height: 100vh;
+  padding: 4rem var(--padding);
+  box-sizing: border-box;
+  background-image: linear-gradient(113.4deg, #fcfcfc 28.08%, #e3c6b5 186.88%);
+}
+
+.featured-title-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  margin-bottom: 3rem;
+}
+
+.featured-title {
+  font-size: 5rem;
+  margin: 0;
+  font-weight: 700;
+  color: var(--umber);
+  letter-spacing: var(--letter-spacing);
+}
+
+.shop-button {
+  border: 2px solid var(--umber);
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  color: var(--black);
+  font-size: 2rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.featured-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.featured-card {
+  padding: 2.5rem;
+  background-color: var(--white);
+  border-radius: 10px;
+  width: 25%;
+}
+
+.featured-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.featured-img {
+  width: 100%;
+}
+
+.card-title-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 1px solid var(--black);
+  margin: 0.5rem 0;
+}
+
+.card-name {
+  font-size: 1.9rem;
+  color: var(--black);
+  margin: 1rem 0;
+}
+
+.card-price {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: var(--black);
+  margin: 1rem 0;
+}
+
+.card-desc {
+  font-size: 1.6rem;
+  margin: 2rem 0;
+}

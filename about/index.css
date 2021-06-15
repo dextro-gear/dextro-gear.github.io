@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+@font-face {
+  font-family: Perfograma;
+  src: url("/fonts/perfograma.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Komoda;
+  src: url("/fonts/komoda.otf") format("opentype");
+  font-weight: normal;
+}
+
+:root {
+  --umber: #8f6246;
+  --beaver: #ad8770;
+  --black: #1a1919;
+  --white: #fcfcfc;
+  --padding: 8rem;
+  --letter-spacing: -0.025em;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  padding: 4rem var(--padding);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand {
+  font-family: Komoda, sans-serif;
+  font-size: 5rem;
+  text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000,
+    0.5px 0.5px 0 #000;
+  transition: color 200ms ease;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 35%;
+}
+
+.nav-links a {
+  font-family: Poppins, sans-serif;
+  font-size: 2.3rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--black);
+  transition: color 200ms ease;
+}
+
+.nav-links a:hover {
+  color: var(--umber);
+}
+
+.navbar-brand:hover {
+  color: var(--umber);
+  text-shadow: -0.5px -0.5px 0 var(--umber), 0.5px -0.5px 0 var(--umber),
+    -0.5px 0.5px 0 var(--umber), 0.5px 0.5px 0 var(--umber);
+}
+
+.hero {
+  position: relative;
+  background-image: url("/public/india-map.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+}
