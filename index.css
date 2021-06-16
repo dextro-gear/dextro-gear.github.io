@@ -32,11 +32,23 @@ html {
   min-height: 100vh;
   font-size: 62.5%;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   margin: 0;
   padding: 0;
+  min-height: 100vh;
+}
+
+::selection {
+  background-color: var(--beaver);
+  color: var(--white);
+}
+
+::-moz-selection {
+  background-color: var(--beaver);
+  color: var(--white);
 }
 
 header {
@@ -68,6 +80,7 @@ header {
   font-family: Poppins, sans-serif;
   font-size: 2.3rem;
   font-weight: 500;
+  letter-spacing: var(--letter-spacing);
   text-decoration: none;
   color: var(--black);
   transition: color 200ms ease;
@@ -103,7 +116,7 @@ header {
 .hero-text {
   position: absolute;
   top: 50%;
-  right: 5rem;
+  right: var(--padding);
   transform: translateY(-50%);
   padding: 1rem 2rem;
   width: 35%;
@@ -114,12 +127,14 @@ header {
 .perfo-title {
   font-family: Perfograma;
   font-size: 5rem;
+  letter-spacing: var(--letter-spacing);
   color: var(--umber);
   margin: 0;
 }
 
 .desc {
   font-size: 2rem;
+  letter-spacing: var(--letter-spacing);
 }
 
 .featured {
@@ -154,6 +169,14 @@ header {
   font-size: 2rem;
   font-weight: 500;
   text-decoration: none;
+  transition: color 200ms ease, background-color 200ms ease;
+}
+
+.shop-button:hover,
+.shop-button:focus,
+.shop-button:active {
+  color: var(--white);
+  background-color: var(--umber);
 }
 
 .featured-flex {
@@ -167,6 +190,11 @@ header {
   background-color: var(--white);
   border-radius: 10px;
   width: 25%;
+  transition: transform 200ms ease;
+}
+
+.featured-card:hover {
+  transform: scale(1.05);
 }
 
 .featured-img img {
