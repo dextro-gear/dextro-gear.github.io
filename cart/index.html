@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Cart - Metal Craft</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <span class="navbar-brand">METAL CRAFT</span>
+        <div class="nav-links">
+          <a href="/">Home</a>
+          <a href="/about">About</a>
+          <a href="/shop">Shop</a>
+          <a href="/cart">Cart</a>
+        </div>
+      </nav>
+    </header>
+    <section class="cart-section">
+      <div class="title-flex">
+        <p class="title">Shopping Cart</p>
+        <p class="item-count">2 items</p>
+      </div>
+      <div class="cart-grid">
+        <p class="grid-title left-align">Products</p>
+        <p class="grid-title">Quantity</p>
+        <p class="grid-title">Price</p>
+        <p class="grid-title">Total</p>
+        <div class="product left-align">
+          <div class="product-image">
+            <img src="/public/half-round-chisel.jpg" alt="half round chisel" />
+          </div>
+          <div class="product-details">
+            <span class="product-name">Half-round Chisel</span>
+            <span class="add-or-remove">
+              <span>-</span>
+              <input class="number-input" type="number" value="2" />
+              <span>+</span>
+            </span>
+            <span class="remove">Remove</span>
+          </div>
+        </div>
+        <p class="data">2</p>
+        <p class="data">200/-</p>
+        <p class="data">400/-</p>
+        <div class="product left-align">
+          <div class="product-image">
+            <img src="/public/liner-tool.jpg" alt="LINER TOOL" />
+          </div>
+          <div class="product-details">
+            <span class="product-name">Liner Tool</span>
+            <span class="add-or-remove">
+              <span>-</span>
+              <input class="number-input" type="number" value="2" />
+              <span>+</span>
+            </span>
+            <span class="remove">Remove</span>
+          </div>
+        </div>
+        <p class="data">2</p>
+        <p class="data">300/-</p>
+        <p class="data">600/-</p>
+        <a href="/checkout" class="checkout-button">Proceed to checkout</a>
+        <div></div>
+        <div></div>
+        <p class="data top-border">1000/-</p>
+      </div>
+    </section>
+  </body>
+</html>
