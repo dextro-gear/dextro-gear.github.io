@@ -136,7 +136,7 @@ header {
 section {
   position: relative;
   padding: 3rem var(--padding);
-  height: 100vh;
+  min-height: 100vh;
   box-sizing: border-box;
   background-image: url("/public/preface-bg-2.jpg");
   background-position: center;

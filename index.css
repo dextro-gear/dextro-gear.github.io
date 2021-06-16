@@ -144,7 +144,7 @@ header {
 
 .featured {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   padding: 4rem var(--padding);
   box-sizing: border-box;
   background-image: linear-gradient(113.4deg, #fcfcfc 28.08%, #e3c6b5 186.88%);
