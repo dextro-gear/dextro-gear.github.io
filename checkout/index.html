@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Checkout - Metal Craft</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="/">
+            <span class="navbar-brand">METAL CRAFT</span>
+        </a>
+        <div class="nav-links">
+          <a href="/">Home</a>
+          <a href="/about">About</a>
+          <a href="/cart">Cart</a>
+        </div>
+      </nav>
+    </header>
+    <section class="checkout-section">
+      <p class="title">Checkout</p>
+      <div class="checkout-flex">
+        <div class="checkout-unit">
+          <p class="checkout-unit-title">Delivery</p>
+          <input type="text" class="input" placeholder="Address 1" />
+          <input type="text" class="input" placeholder="Address 2" />
+          <span class="double-input">
+            <input type="text" class="input" placeholder="City" />
+            <input type="text" class="input" placeholder="State" />
+          </span>
+          <span class="double-input">
+          <input type="text" class="input" placeholder="Country" />
+            <input type="text" class="input" placeholder="Pincode" />
+          </span>
+        </div>
+        <div class="checkout-unit">
+          <p class="checkout-unit-title">Contact Details</p>
+          <input type="email" class="input" placeholder="Email" />
+          <span class="double-input">
+            <input type="text" class="input" placeholder="First Name" />
+            <input type="text" class="input" placeholder="Last Name" />
+          </span>
+          <input type="text" class="input" placeholder="Phone" />
+          <a href="#payment" class="proceed-button">Proceed to payment</a>
+        </div>
+      </div>
+    </section>
+    <section class="payment-section" id="payment">
+      <p class="title">Payment</p>
+      <div class="checkout-flex">
+        <div class="checkout-unit">
+          <p class="checkout-unit-title">Pay with debit/credit card</p>
+          <input type="text" class="input" placeholder="Name on card" />
+          <input type="text" class="input" placeholder="Card number" />
+          <span class="double-input">
+            <input type="text" class="input" placeholder="Expiry" />
+            <input type="text" class="input" placeholder="CVV" />
+          </span>
+        <a href="#payment" class="proceed-button">Proceed to portal</a>
+
+        </div>
+    </section>
+  </body>
+</html>
